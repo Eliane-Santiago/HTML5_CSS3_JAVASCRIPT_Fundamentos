@@ -1,0 +1,53 @@
+	# print-infos.js
+	
+	// CRIAÇÃO ARRAY
+	const listaCPFs = ["12345678912", "11111111111", "22222222222"]
+	
+	// CRIAÇÃO OBJETO - relação de chave e valor
+	
+	const cliente = {
+		nome: "André",
+		idade: 36,
+		cpf: "12345678912",
+		e-mail: "teste@gmail.com"
+	}
+	
+	// Acessando a informações do objeto cliente
+	
+	console.log(cliente.nome) 
+	
+	console.log('Meu nome é ${cliente.nome} e tenho ${cliente.idade} anos.')
+	
+	// mostrar os 3 primeiros dígitos do cpf
+	console.log(cliente.cpf.substring(0,3))
+	
+	____________________________________________________________________
+	
+	# acessar-lista.js
+	
+	const cliente = {
+		nome: "André",
+		idade: 36,
+		cpf: "12345678912",
+		e-mail: "teste@gmail.com"
+	}
+	
+	// ARRAY
+	const chaves = ["nome", "idade", "cpf", "email"]
+	
+	
+	// ACESSANDO DADOS DO ARRAY
+	console.log(|cliente[chaves[0]])
+	
+	chaves.forEach(info=>console.log(cliente[info]))
+	
+	
+	____________________________________________________________________
+	# adicionar-campos.js
+	
+	
+	console.log(cliente);
+	
+	cliente.fone = "85986652365"
+	
+	console.log(cliente);
