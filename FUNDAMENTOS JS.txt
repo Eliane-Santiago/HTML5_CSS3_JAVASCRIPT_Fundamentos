@@ -1,0 +1,172 @@
+>>> FUNDAMENTOS DE JS
+
+
+-- TIPOS DE DADOS (PRIMITIVO E COMPLEXOS)
+
+>>> PRIMITIVOS 
+
+NÚMEROS (TIPO NUMBER)
+CARACTERE (STRING)
+BOOLEANOS
+
+>>> COMPLEXOS 
+
+OBJETOS
+
+
+
+
+01) NÚMEROS (TIPO NUMBER)
+
+EX.: 
+
+// Nome do arquivo
+#type-number.js 
+
+// CRIAÇÃO DE VARIÁVAL TIPO NUMBER
+const mrnuNumero = 3;
+const num1 = 1;
+const num2 = 2;
+const opMat = num1 + num2;
+
+const numPontoFlutuante = 3.3;
+const numPontoFlutuanteSemZero = .5;
+const opMatFlutuante = num1 / numPontoFlutuante;
+
+console.log(opMat);
+console.log(opMatFlutuante);
+
+// NaN -> Not A Number (Não é um Número)
+
+const alura = "alura";
+console.log(num1 * alura);
+
+// NUMEROS REAIS DECIMAIS COM EXPOENTE
+
+EX.: 5.5E+2 OU 5.5e+2 (OU SEJA 5.5^+2)
+
+// DIVISÃO POR ZERO -> Infinity
+
+var a = 10
+var b = 0
+console.log(a/b); //Infinity
+
+
+// DIVISÃO ZERO POR ZERO -> NaN
+
+var a = 0
+var b = 0
+console.log(a/b); //NaN
+
+
+
+02) CARACTERE (STRING)
+
+// Nome do arquivo
+#type-string.js 
+
+const texto1 = "Olá, mundo!"
+const texto1 = 'Olá, mundo!'
+const senha = "çsdfmç1127465!"
+const StringDeNumeros = "12345678"
+
+const citacao1 = 'O Leo disse "Oi!"';
+console.log(citacao1);
+
+const citacao2 = "O Leo disse 'Oi!'";
+console.log(citacao2);
+
+
+// CONCATENÇÃO (+)
+
+const meuNome = "Leonardo";
+const citacao = "Meu nome é";
+
+console.log(citacao + meuNome); // Meu nome é Leonardo
+
+
+//TEMPLATE STRING OU TEMPLATE LITERAL
+
+//  \u -> CARACTERE DE ESCAPE
+
+// UTF-16 -> É USADO POR PADRÃO PELO JS
+
+
+// CONVERTENDO UM TESTE MAIUSCULO PARA MINUSCULO
+
+const input = "FORTALEZA";
+tolowerCase(input) // fortaleza
+
+//SABER QUANTIDADE DE CARACTERE -> length
+
+conts senha = "minhaSenha123"
+
+console.log(senha.length); // 13 caracteres
+
+
+03) BOOLEANOS
+
+const usuarioLogado = true
+const contapaga = false
+
+// 0 - False
+// 1 - True
+
+console.log(0 == false) // true
+console.log("" == false) // true
+console.log(1 == true) // true
+
+
+04) NULL e UNDERFINED
+
+// Null
+// Underfined
+
+let minhaVar; // Underfined
+let VarNull =null; // Null
+
+
+console.log(typeof minhaVar) // Underfined
+console.log(typeof VarNul) // Objecte -> bug javascript
+
+
+let num = 3; 
+let nome = eliane;
+
+console.log(typeof  num) // numero
+console.log(typeof nome) // string
+
+05) Tipo Booleano - Conversões 
+
+- Conversões Implícita 
+
+const numero = 456
+const  numerString = "456"
+const  numerString = "456"
+const  numerString = "456a" //NaN
+
+console.log(numero === numerString) // False -> o sistema compara um numero com uma string
+console.log(numero == numerString) // True -> compara um numero converte a string em numero e compara
+console.log(numero + numerString) //456456 -> o sistema faz uma concatenação
+
+- Conversões Explicita
+
+//Number() -> Converte em numero
+//String() -> converter em string
+
+console.log(numero + Number(numeroString)) // 912
+
+
+
+
+-- VARIÁVEIS
+-- NODE JS =! JAVA SCRIPT
+-- OPERADORES
+
+=== -> FAZ A COMPARAÇÃO BIT À BIT
+
+-- FUNÇÕES
+
+
+
+

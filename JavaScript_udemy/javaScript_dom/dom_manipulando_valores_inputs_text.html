@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript - P01</title>
+</head>
+
+<script>
+    function distribuindoValores(){
+
+        // Selecionando os valores dos caracteres
+        let caractere = document.getElementById("entrada").value
+
+        //console.log(document.getElementById("entrada").value) // TESTANDO O CONSOLE
+        //console.log(caractere) // TESTANDO O CONSOLE
+
+        //Limpando os valores dos caracteres
+        document.getElementById("entrada").value = ''
+
+        //Limpar espaços em brancos nas expremidades das strings
+        caractere.trim()
+
+        switch(caractere){
+        
+            case '0':
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':  
+            case '6':
+            case '7':
+            case '8':  
+            case '9':
+            //Adicionar caractere em números
+                document.getElementById("numeros").value += caractere
+            break;
+            default:
+                //Adicionar caratere em letras
+                document.getElementById("letras").value += caractere
+        }
+    }
+</script>
+
+<body>
+    <h1>JavaScript - Manipulando Valores Inputs (Text)</h1>
+    <input type="texto" placeholder="Digite um texto aqui" id="entrada" onkeyup="distribuindoValores()">
+    <br><hr/><br>   
+    <span>Letras: </span><input type="texto" disabled id="letras">
+    <span>Números: </span><input type="texto" disabled id="numeros">
+</body>
+
+
+</html>
+
+
+

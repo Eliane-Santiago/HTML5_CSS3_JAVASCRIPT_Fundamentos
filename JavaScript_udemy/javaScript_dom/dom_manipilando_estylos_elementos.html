@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript - P02</title>
+</head>
+
+<script>
+
+    function mudaCor(corFundo, altura, lagura){
+        document.getElementById('quadrado').style.background = corFundo //Mudar a cor de fundo do elemento
+        document.getElementById('quadrado').style.height = altura // Mudar a altura do elemento
+        document.getElementById('quadrado').style.width = lagura // Mudar a lagura do elemento
+    }
+    
+</script>
+
+<body>
+    <h1>Manipulando Estylos de Elementos</h1>
+    <br>
+    <button type="button" onclick="mudaCor('red', '200px', '300px')" id="vermelho">Vermelho</button>
+    <button type="button" onclick="mudaCor('green', '400px', '600px')" id="verde">Verde</button>
+    <button type="button" onclick="mudaCor('blue', '900px', '700px')" id="azul">Azul</button>
+    <br> <br>
+    <hr/>
+    <br> <br>
+    <div style="border: solid 2px #000; width: 500px; height: 500px " id="quadrado" ></div>
+</body>
+
+</html>
+
+
+

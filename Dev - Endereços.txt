@@ -1,0 +1,19 @@
+
+>>> Documentações...
+https://www.w3schools.com/
+
+>>> ícones
+https://fontawesome.com/v4/icons/
+
+>>> Praticar Grid
+
+https://cssgridgarden.com/
+
+>>> Documentação Grid
+
+https://www.origamid.com/projetos/css-grid-layout-guia-completo/
+
+
+>>> Praticar FlexBox
+
+https://flexboxfroggy.com/#pt-br
